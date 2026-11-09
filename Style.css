@@ -99,9 +99,9 @@ footer{background:#f6f6f6;padding:56px 24px 24px;display:flex;flex-direction:col
 }
 
 /* ===== ЗУРАГ ===== */
-.ph img,.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.ph img,.hero>img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
 .ph::after{z-index:0}
-.hero .bg{z-index:0}
+.hero>img.bg{z-index:0}
 .hero>*:not(.bg){position:relative;z-index:2}
 .hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(0,0,0,.55),transparent 55%)}
 .banner::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(0,0,0,.5),transparent 60%)}
@@ -126,3 +126,14 @@ body.menu-open #drawer{visibility:visible}
 .product span{padding-bottom:4px}
 .note{color:#666}
 .fcols h3{font-size:15px;margin-bottom:4px}.fcols .mt{margin-top:20px}
+
+/* ===== SEO: font >=12px, tap target зай ===== */
+.note{font-size:12px;padding:8px}
+.eyebrow{font-size:13px}
+.h-left,.h-right{gap:8px}
+.legal{gap:12px}
+.social{gap:8px}
+.fcols a,.legal a,.social a{min-height:44px;display:inline-flex;align-items:center}
+.fcols>div>a{display:flex}
+#menuList .sub a{min-height:44px;display:flex;align-items:center;padding:0}
+.rail .item{padding-bottom:8px}

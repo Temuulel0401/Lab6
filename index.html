@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LOUIS VUITTON – Flexbox clone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER: flex, 3 бүс (зүүн / төв / баруун) -->
+<header id="header">
+  <div class="h-left">
+    <button id="menuBtn" class="hbtn"><span class="burger"></span><span class="lbl">Menu</span></button>
+    <button class="hbtn"><span>⌕</span><span class="lbl">Search</span></button>
+  </div>
+  <a class="logo" href="#top">LOUIS VUITTON</a>
+  <div class="h-right">
+    <button class="hbtn"><span>♡</span><span class="lbl">Wishlist</span></button>
+    <button class="hbtn"><span>☺</span><span class="lbl">My LV</span></button>
+  </div>
+</header>
+
+<!-- SIDE DRAWER -->
+<div id="overlay"></div>
+<aside id="drawer">
+  <button id="closeBtn" class="hbtn">✕ Close</button>
+  <ul id="menuList"></ul>
+</aside>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <img class="bg" src="https://eu.louisvuitton.com/images/is/poster-video/a3236166-c766-4e13-b597-30681e8f6aca/87jBQzxODTjW2dVV6MqXAitw.jpg" alt="" referrerpolicy="no-referrer" onerror="this.remove()">
+    <p class="eyebrow">Gifting</p>
+    <h1>A Holiday Journey</h1>
+    <a class="pill" href="#">Discover the Gift Selections</a>
+  </section>
+
+  <!-- CATEGORY RAIL -->
+  <section class="block">
+    <h2 class="title">Explore a Selection of the Maison’s Creations</h2>
+    <p class="eyebrow dark">Holiday</p>
+    <div class="rail-wrap">
+      <button class="arrow left" id="prev" aria-label="Previous">‹</button>
+      <div class="rail" id="rail"></div>
+      <button class="arrow right" id="next" aria-label="Next">›</button>
+    </div>
+  </section>
+
+  <!-- COLLECTIONS (JS-ээр үүснэ) -->
+  <div id="collections"></div>
+
+  <!-- MAISON -->
+  <section class="block maison">
+    <h2 class="title">The Maison Louis Vuitton</h2>
+    <p class="lead">Discover Louis Vuitton’s history from 1854 to the present day — an enduring spirit of travel, visionary artistic directors, and exceptional savoir-faire.</p>
+    <div class="cards">
+      <article class="card"><div class="ph" style="--a:#d8c3a5;--b:#8d6e4c"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/services/LV_Heritage_Services_Push_2026.jpg" alt="" referrerpolicy="no-referrer" onerror="this.remove()"></div><h3>History of the House</h3><a href="#">Explore</a></article>
+      <article class="card"><div class="ph" style="--a:#c9d1d9;--b:#4b5563"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/services/LV_Fashion_Show_WW_HP_Services_Push_2026.jpg" alt="" referrerpolicy="no-referrer" onerror="this.remove()"></div><h3>Fashion Shows</h3><a href="#">Discover</a></article>
+      <article class="card"><div class="ph" style="--a:#e5c7c0;--b:#9a5b52"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/services/LV_Arts_Culture_WW_HP_Services_Push_2026.jpg" alt="" referrerpolicy="no-referrer" onerror="this.remove()"></div><h3>Arts &amp; Culture Program</h3><a href="#">The Program</a></article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <a class="flogo" href="#top">LOUIS VUITTON</a>
+  <div class="fcols">
+    <div><h4>Help</h4><a href="#">Contact us</a><a href="#">FAQ</a><a href="#">Track my order</a></div>
+    <div><h4>Services</h4><a href="#">Personal Advisors</a><a href="#">Repairs</a><a href="#">Personalization</a><a href="#">Art of Gifting</a></div>
+    <div><h4>About Louis Vuitton</h4><a href="#">Fashion Shows</a><a href="#">Arts &amp; Culture</a><a href="#">La Maison</a><a href="#">Sustainability</a></div>
+    <div><h4>Email Sign-up</h4><a href="#">Receive the latest news</a><h4 class="mt">Follow Us</h4><div class="social"><a href="#">Instagram</a><a href="#">X</a><a href="#">YouTube</a></div></div>
+  </div>
+  <div class="fbottom">
+    <div class="legal"><a href="#">Sitemap</a><a href="#">Legal &amp; privacy</a><a href="#">Cookies</a></div>
+    <a href="#">International (English)</a>
+  </div>
+  <p class="note">Practice clone for learning flexbox. Not affiliated with Louis Vuitton.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

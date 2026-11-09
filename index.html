@@ -3,81 +3,141 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LOUIS VUITTON – Flexbox clone</title>
+<title>Louis Vuitton Clone – Holiday Gifts &amp; Collections</title>
+<meta name="description" content="Louis Vuitton homepage practice clone built with HTML, CSS flexbox and JavaScript: holiday gifts, handbags, Monogram Rouge beauty and new collections.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23000'/%3E%3Ctext x='50' y='66' font-size='48' text-anchor='middle' fill='%23fff' font-family='Georgia'%3ELV%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://eu.louisvuitton.com">
+<link rel="preload" as="image" href="https://eu.louisvuitton.com/images/is/poster-video/a3236166-c766-4e13-b597-30681e8f6aca/87jBQzxODTjW2dVV6MqXAitw.jpg" fetchpriority="high">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Louis Vuitton Clone – Holiday Gifts &amp; Collections">
+<meta property="og:description" content="Louis Vuitton homepage practice clone built with HTML, CSS flexbox and JavaScript: holiday gifts, handbags, Monogram Rouge beauty and new collections.">
+<meta property="og:image" content="https://eu.louisvuitton.com/images/is/poster-video/a3236166-c766-4e13-b597-30681e8f6aca/87jBQzxODTjW2dVV6MqXAitw.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Louis Vuitton Clone – Holiday Gifts &amp; Collections">
+<meta name="twitter:description" content="Louis Vuitton homepage practice clone built with HTML, CSS flexbox and JavaScript: holiday gifts, handbags, Monogram Rouge beauty and new collections.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Louis Vuitton Clone – Holiday Gifts & Collections","description":"Louis Vuitton homepage practice clone built with HTML, CSS flexbox and JavaScript: holiday gifts, handbags, Monogram Rouge beauty and new collections.","inLanguage":"en"}</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to main content</a>
 
-<!-- HEADER: flex, 3 бүс (зүүн / төв / баруун) -->
 <header id="header">
   <div class="h-left">
-    <button id="menuBtn" class="hbtn"><span class="burger"></span><span class="lbl">Menu</span></button>
-    <button class="hbtn"><span>⌕</span><span class="lbl">Search</span></button>
+    <button id="menuBtn" class="hbtn" aria-label="Open menu" aria-controls="drawer" aria-expanded="false"><span class="burger" aria-hidden="true"></span><span class="lbl">Menu</span></button>
+    <button class="hbtn" aria-label="Search"><span aria-hidden="true">⌕</span><span class="lbl">Search</span></button>
   </div>
-  <a class="logo" href="#top">LOUIS VUITTON</a>
+  <a class="logo" href="#main" aria-label="Louis Vuitton, home">LOUIS VUITTON</a>
   <div class="h-right">
-    <button class="hbtn"><span>♡</span><span class="lbl">Wishlist</span></button>
-    <button class="hbtn"><span>☺</span><span class="lbl">My LV</span></button>
+    <button class="hbtn" aria-label="Wishlist"><span aria-hidden="true">♡</span><span class="lbl">Wishlist</span></button>
+    <button class="hbtn" aria-label="My LV account"><span aria-hidden="true">☺</span><span class="lbl">My LV</span></button>
   </div>
 </header>
 
-<!-- SIDE DRAWER -->
 <div id="overlay"></div>
-<aside id="drawer">
-  <button id="closeBtn" class="hbtn">✕ Close</button>
-  <ul id="menuList"></ul>
-</aside>
+<nav id="drawer" aria-label="Main menu">
+  <button id="closeBtn" class="hbtn" aria-label="Close menu">✕ Close</button>
+  <ul id="menuList">
+      <li><button aria-expanded="false">Women<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/women/new-in-women/_/N-ty7er6l">New In</a><a href="https://eu.louisvuitton.com/eng-e1/women/new-in-women/_/N-ty7er6l">Handbags</a><a href="https://eu.louisvuitton.com/eng-e1/women/new-in-women/_/N-ty7er6l">Wallets and Small Leather Goods</a><a href="https://eu.louisvuitton.com/eng-e1/women/new-in-women/_/N-ty7er6l">Ready-to-Wear</a><a href="https://eu.louisvuitton.com/eng-e1/women/new-in-women/_/N-ty7er6l">Accessories</a><a href="https://eu.louisvuitton.com/eng-e1/women/new-in-women/_/N-ty7er6l">Shoes</a><a href="https://eu.louisvuitton.com/eng-e1/women/new-in-women/_/N-ty7er6l">Travel</a></div></li>
+      <li><button aria-expanded="false">Men<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/men/new-in-men/_/N-t14l5lul">New In</a><a href="https://eu.louisvuitton.com/eng-e1/men/new-in-men/_/N-t14l5lul">Bags</a><a href="https://eu.louisvuitton.com/eng-e1/men/new-in-men/_/N-t14l5lul">Wallets and Small Leather Goods</a><a href="https://eu.louisvuitton.com/eng-e1/men/new-in-men/_/N-t14l5lul">Ready-to-Wear</a><a href="https://eu.louisvuitton.com/eng-e1/men/new-in-men/_/N-t14l5lul">Accessories</a><a href="https://eu.louisvuitton.com/eng-e1/men/new-in-men/_/N-t14l5lul">Shoes</a><a href="https://eu.louisvuitton.com/eng-e1/men/new-in-men/_/N-t14l5lul">Travel</a></div></li>
+      <li><button aria-expanded="false">Holiday Gifts<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/stories/all-gifts">All Holiday Gifts</a><a href="https://eu.louisvuitton.com/eng-e1/stories/all-gifts">Holiday Gifts for Her</a><a href="https://eu.louisvuitton.com/eng-e1/stories/all-gifts">Holiday Gifts for Him</a><a href="https://eu.louisvuitton.com/eng-e1/stories/all-gifts">Personalization</a></div></li>
+      <li><button aria-expanded="false">Monogram Anniversary<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/monogram-anniversary/the-collections/_/N-tuc26rb">The Collections</a><a href="https://eu.louisvuitton.com/eng-e1/monogram-anniversary/the-collections/_/N-tuc26rb">Speedy</a><a href="https://eu.louisvuitton.com/eng-e1/monogram-anniversary/the-collections/_/N-tuc26rb">Alma</a><a href="https://eu.louisvuitton.com/eng-e1/monogram-anniversary/the-collections/_/N-tuc26rb">Neverfull</a><a href="https://eu.louisvuitton.com/eng-e1/monogram-anniversary/the-collections/_/N-tuc26rb">Keepall</a></div></li>
+      <li><button aria-expanded="false">Bags and Small Leather Goods<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/women/handbags/all-handbags/_/N-tfr7qdp">Women Bags</a><a href="https://eu.louisvuitton.com/eng-e1/women/handbags/all-handbags/_/N-tfr7qdp">Men Bags</a><a href="https://eu.louisvuitton.com/eng-e1/women/handbags/all-handbags/_/N-tfr7qdp">Personalization</a></div></li>
+      <li><button aria-expanded="false">Trunks and Travel<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/trunks-and-travel/travel-bags/all-travel-bags/_/N-tluth1a">Travel Bags</a><a href="https://eu.louisvuitton.com/eng-e1/trunks-and-travel/travel-bags/all-travel-bags/_/N-tluth1a">Rolling Luggages</a><a href="https://eu.louisvuitton.com/eng-e1/trunks-and-travel/travel-bags/all-travel-bags/_/N-tluth1a">Travel Accessories</a><a href="https://eu.louisvuitton.com/eng-e1/trunks-and-travel/travel-bags/all-travel-bags/_/N-tluth1a">Trunks and Boxes</a></div></li>
+      <li><button aria-expanded="false">Perfumes and Beauty<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/perfumes-and-beauty/all-perfumes/_/N-t1hojbvl">All Perfumes</a><a href="https://eu.louisvuitton.com/eng-e1/perfumes-and-beauty/all-perfumes/_/N-t1hojbvl">All Beauty</a><a href="https://eu.louisvuitton.com/eng-e1/perfumes-and-beauty/all-perfumes/_/N-t1hojbvl">Lips</a><a href="https://eu.louisvuitton.com/eng-e1/perfumes-and-beauty/all-perfumes/_/N-t1hojbvl">Eyes</a></div></li>
+      <li><button aria-expanded="false">Jewelry<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/jewelry/categories/all-fine-jewelry/_/N-t1svd8ld">Categories</a><a href="https://eu.louisvuitton.com/eng-e1/jewelry/categories/all-fine-jewelry/_/N-t1svd8ld">Collections</a><a href="https://eu.louisvuitton.com/eng-e1/jewelry/categories/all-fine-jewelry/_/N-t1svd8ld">High Jewelry</a></div></li>
+      <li><button aria-expanded="false">Watches<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/watches/all-watches/_/N-t1d9ikj8">New In</a><a href="https://eu.louisvuitton.com/eng-e1/watches/all-watches/_/N-t1d9ikj8">All Collections</a><a href="https://eu.louisvuitton.com/eng-e1/watches/all-watches/_/N-t1d9ikj8">Objects of Time</a></div></li>
+      <li><button aria-expanded="false">Home, Lifestyle and Library<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/home-lifestyle-and-library/furniture-and-lighting/all-furniture-and-lighting/_/N-t1p0t69l">Furniture and Lighting</a><a href="https://eu.louisvuitton.com/eng-e1/home-lifestyle-and-library/furniture-and-lighting/all-furniture-and-lighting/_/N-t1p0t69l">Decorative Objects</a><a href="https://eu.louisvuitton.com/eng-e1/home-lifestyle-and-library/furniture-and-lighting/all-furniture-and-lighting/_/N-t1p0t69l">Books</a></div></li>
+      <li><button aria-expanded="false">Services<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/stories/louis-vuitton-services">Personal Advisors</a><a href="https://eu.louisvuitton.com/eng-e1/stories/louis-vuitton-services">Repairs</a><a href="https://eu.louisvuitton.com/eng-e1/stories/louis-vuitton-services">Personalization</a></div></li>
+      <li><a class="toplink" href="https://eu.louisvuitton.com/eng-e1/magazine">The Maison Louis Vuitton</a></li>
+  </ul>
+</nav>
 
-<main id="top">
-  <!-- HERO -->
-  <section class="hero">
-    <img class="bg" src="https://eu.louisvuitton.com/images/is/poster-video/a3236166-c766-4e13-b597-30681e8f6aca/87jBQzxODTjW2dVV6MqXAitw.jpg" alt="" referrerpolicy="no-referrer" onerror="this.remove()">
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <img src="https://eu.louisvuitton.com/images/is/poster-video/a3236166-c766-4e13-b597-30681e8f6aca/87jBQzxODTjW2dVV6MqXAitw.jpg" alt="Louis Vuitton holiday gifting campaign" width="1600" height="900" fetchpriority="high" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">
     <p class="eyebrow">Gifting</p>
-    <h1>A Holiday Journey</h1>
-    <a class="pill" href="#">Discover the Gift Selections</a>
+    <h1 id="hero-title">A Holiday Journey</h1>
+    <a class="pill" href="https://eu.louisvuitton.com/eng-e1/stories/all-gifts">Discover the Holiday Gift Selections</a>
   </section>
 
-  <!-- CATEGORY RAIL -->
-  <section class="block">
-    <h2 class="title">Explore a Selection of the Maison’s Creations</h2>
+  <section class="block" aria-labelledby="explore">
+    <h2 class="title" id="explore">Explore a Selection of the Maison’s Creations</h2>
     <p class="eyebrow dark">Holiday</p>
     <div class="rail-wrap">
-      <button class="arrow left" id="prev" aria-label="Previous">‹</button>
-      <div class="rail" id="rail"></div>
-      <button class="arrow right" id="next" aria-label="Next">›</button>
+      <button class="arrow left" id="prev" aria-label="Previous creations">‹</button>
+      <div class="rail" id="rail">
+        <a class="item" href="https://eu.louisvuitton.com/eng-e1/women/handbags/all-handbags/_/N-tfr7qdp"><div class="ph" style="--a:#e8d5b5;--b:#9a6b3c"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/categories/holiday/HOLIDAY_26_WLG_PET3_DII.jpg" alt="Women’s Handbags" width="600" height="800" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><span>Women’s Handbags</span></a>
+        <a class="item" href="https://eu.louisvuitton.com/eng-e1/women/wallets-and-small-leather-goods/all-wallets-and-small-leather-goods/_/N-t164iz3b"><div class="ph" style="--a:#f1c9c0;--b:#a4574b"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/categories/holiday/HOLIDAY_26_SLG2_DII.jpg" alt="Women’s Wallets and Small Leather Goods" width="600" height="800" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><span>Women’s Wallets and Small Leather Goods</span></a>
+        <a class="item" href="https://eu.louisvuitton.com/eng-e1/women/accessories/all-accessories/_/N-t1i01v9x"><div class="ph" style="--a:#d7dde8;--b:#566581"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/categories/holiday/HOLIDAY_26_WACC_FJ_DII.jpg" alt="Women’s Accessories" width="600" height="800" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><span>Women’s Accessories</span></a>
+        <a class="item" href="https://eu.louisvuitton.com/eng-e1/perfumes-and-beauty/perfumes-gifts/_/N-t40392g"><div class="ph" style="--a:#f3e3b3;--b:#b08a2e"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/categories/holiday/HOLIDAY_26_PERFUMES2_DII.jpg" alt="Perfumes" width="600" height="800" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><span>Perfumes</span></a>
+        <a class="item" href="https://eu.louisvuitton.com/eng-e1/gifts/mon-monogram/_/N-t1vghc33"><div class="ph" style="--a:#cdd9cf;--b:#516656"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/categories/holiday/HOLIDAY_26_TRAVEL2_DII.jpg" alt="Travel" width="600" height="800" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><span>Travel</span></a>
+        <a class="item" href="https://eu.louisvuitton.com/eng-e1/men/shoes/all-shoes/_/N-t118ht95"><div class="ph" style="--a:#d9d2c9;--b:#5d5247"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/categories/holiday/HOLIDAY_26_MSHOES_DII.jpg" alt="Men’s Shoes" width="600" height="800" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><span>Men’s Shoes</span></a>
+        <a class="item" href="https://eu.louisvuitton.com/eng-e1/men/wallets-and-small-leather-goods/all-wallets-and-small-leather-goods/_/N-t1iazbp7"><div class="ph" style="--a:#c9d3e0;--b:#3d4b63"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/categories/holiday/HOLIDAY_26_MSLG_DII.jpg" alt="Men’s Wallets and Small Leather Goods" width="600" height="800" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><span>Men’s Wallets and Small Leather Goods</span></a>
+        <a class="item" href="https://eu.louisvuitton.com/eng-e1/men/accessories/all-accessories/_/N-t1an9prf"><div class="ph" style="--a:#e2cfd9;--b:#7d4a64"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/categories/holiday/HOLIDAY_26_MACC2_DII.jpg" alt="Men’s Accessories" width="600" height="800" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><span>Men’s Accessories</span></a>
+      </div>
+      <button class="arrow right" id="next" aria-label="Next creations">›</button>
     </div>
   </section>
 
-  <!-- COLLECTIONS (JS-ээр үүснэ) -->
-  <div id="collections"></div>
+  <section class="collection"><div class="banner ph plain" style="--a:#b8860b;--b:#3a2a08"><img src="https://eu.louisvuitton.com/images/is/poster-video/a2fc7450-c41a-4f2b-8a41-5fa02d547c04/eLuxgxlHKIkPUy2PFK79AAAC.jpg" alt="Louis Vuitton seasonal campaign" width="1600" height="700" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div></section>
+  <section class="collection" aria-labelledby="col1">
+    <div class="banner ph" style="--a:#a9bdd6;--b:#2f3f5c"><img src="https://eu.louisvuitton.com/images/is/poster-video/a316cd5d-102a-4e55-8521-1d3f9b74c6ff/5GnbrY7TAuF0hzcfs2Bch9c6.jpg" alt="Spring-Summer 2027 Pre-Collection – Louis Vuitton Men" width="1600" height="800" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"><p class="eyebrow">Men</p><h2 id="col1">Spring-Summer 2027 Pre-Collection</h2></div>
+    <div class="products">
+      <a class="product" href="https://eu.louisvuitton.com/eng-e1/products/speedy-18-bandouliere-g77-P00143374/M3A518"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-speedy-18-bandouliere--M3A518_PM2_Front%20view.jpg" alt="Speedy 18 Bandoulière" width="600" height="600" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><span>Speedy 18 Bandoulière</span></a>
+      <a class="product" href="https://eu.louisvuitton.com/eng-e1/products/monogram-surplus-denim-tracktop-HWA22WD1O/1AL0MR"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-surplus-denim-tracktop--HWA22WD1O650_PM2_Front%20view.jpg" alt="Monogram Surplus Denim Tracktop" width="600" height="600" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><span>Monogram Surplus Denim Tracktop</span></a>
+      <a class="product" href="https://eu.louisvuitton.com/eng-e1/products/lv-trainer-sneaker-nvprod7980055v/1AL3OO"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-trainer-sneaker--B1UQ84DN20_PM2_Front%20view.jpg" alt="LV Trainer Sneaker" width="600" height="600" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><span>LV Trainer Sneaker</span></a>
+      <a class="product" href="https://eu.louisvuitton.com/eng-e1/products/lv-lock-round-square-sunglasses-s00-nvprod7990012v/Z3664W"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-lock-round-square-sunglasses--Z3664W_PM2_Front%20view.jpg" alt="LV Lock Round Square Sunglasses" width="600" height="600" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><span>LV Lock Round Square Sunglasses</span></a>
+    </div>
+    <a class="discover" href="https://eu.louisvuitton.com/eng-e1/men/spring-summer-2027-pre-collection/_/N-tfodg11">Discover the Spring-Summer 2027 Pre-Collection</a>
+  </section>
+  <section class="collection" aria-labelledby="col2">
+    <div class="banner ph" style="--a:#c9364b;--b:#4a0a17"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/collections/monogram-rouge/MONOGRAM_ROUGE_HP_Push_Nov26_DII.jpg" alt="Monogram Rouge – Louis Vuitton Beauty" width="1600" height="800" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"><p class="eyebrow">Beauty</p><h2 id="col2">Monogram Rouge</h2></div>
+    <div class="products">
+      <a class="product" href="https://eu.louisvuitton.com/eng-e1/products/lv-rouge-matte-lipstick-nvprod8420005v/LLD012"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-rouge---matte-lipstick---896--LLD012_PM2_Front%20view.jpg" alt="LV Rouge – Matte Lipstick – 896" width="600" height="600" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><span>LV Rouge – Matte Lipstick – 896</span></a>
+      <a class="product" href="https://eu.louisvuitton.com/eng-e1/products/lv-rouge-satin-lipstick-nvprod8420006v/LLD013"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-rouge---satin-lipstick---896--LLD013_PM2_Front%20view.jpg" alt="LV Rouge – Satin Lipstick – 896" width="600" height="600" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><span>LV Rouge – Satin Lipstick – 896</span></a>
+      <a class="product" href="https://eu.louisvuitton.com/eng-e1/products/lv-baume-lip-balm-P00140183/LLD014"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-baume---lip-balm---051--LLD014_PM2_Front%20view.jpg" alt="LV Baume – Lip Balm – 051" width="600" height="600" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><span>LV Baume – Lip Balm – 051</span></a>
+      <a class="product" href="https://eu.louisvuitton.com/eng-e1/products/lv-ombres-eyeshadow-palette-896-P00149297/LYD005"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-ombres---eyeshadow-palette---896--LYD005_PM2_Front%20view.jpg" alt="LV Ombres – Eyeshadow Palette – 896" width="600" height="600" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><span>LV Ombres – Eyeshadow Palette – 896</span></a>
+    </div>
+    <a class="discover" href="https://eu.louisvuitton.com/eng-e1/perfumes-and-beauty/all-beauty/_/N-t21cl44">Discover the Monogram Rouge Collection</a>
+  </section>
+  <section class="collection" aria-labelledby="col3">
+    <div class="banner ph" style="--a:#e9d6a8;--b:#8a5a2a"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/collections/vivienne-holiday/Vivienne_Holiday_Nov26_WW_HP_Push_DII.jpg" alt="Vivienne Winter Holiday – Louis Vuitton Women" width="1600" height="800" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"><p class="eyebrow">Women</p><h2 id="col3">Vivienne Winter Holiday</h2></div>
+    <div class="products">
+      <a class="product" href="https://eu.louisvuitton.com/eng-e1/products/pochette-hills-autres-toiles-monogram-P00142220/M2A783"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-pochette-hills---M2A783_PM2_Front%20view.jpg" alt="Pochette Hills" width="600" height="600" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><span>Pochette Hills</span></a>
+      <a class="product" href="https://eu.louisvuitton.com/eng-e1/products/time-out-sneaker-nvprod8030048v/1AKZ8T"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-time-out-sneaker--A1UT5FSL33_PM2_Front%20view.jpg" alt="Time Out Sneaker" width="600" height="600" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><span>Time Out Sneaker</span></a>
+      <a class="product" href="https://eu.louisvuitton.com/eng-e1/products/rosalie-coin-purse-autres-toiles-monogram-P00141804/M2A794"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-rosalie-coin-purse--M2A794_PM2_Front%20view.jpg" alt="Rosalie Coin Purse" width="600" height="600" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><span>Rosalie Coin Purse</span></a>
+      <a class="product" href="https://eu.louisvuitton.com/eng-e1/products/vivienne-sweet-bb-bandeau-s00-P00140473/M9A258"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-vivienne-sweet-bb-bandeau--M9A258_PM2_Front%20view.jpg" alt="Vivienne Sweet BB Bandeau" width="600" height="600" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><span>Vivienne Sweet BB Bandeau</span></a>
+    </div>
+    <a class="discover" href="https://eu.louisvuitton.com/eng-e1/women/vivienne-winter-holiday/_/N-tev5ewj">Discover the Vivienne Winter Holiday Collection</a>
+  </section>
 
-  <!-- MAISON -->
-  <section class="block maison">
-    <h2 class="title">The Maison Louis Vuitton</h2>
+  <section class="block maison" aria-labelledby="maison">
+    <h2 class="title" id="maison">The Maison Louis Vuitton</h2>
     <p class="lead">Discover Louis Vuitton’s history from 1854 to the present day — an enduring spirit of travel, visionary artistic directors, and exceptional savoir-faire.</p>
     <div class="cards">
-      <article class="card"><div class="ph" style="--a:#d8c3a5;--b:#8d6e4c"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/services/LV_Heritage_Services_Push_2026.jpg" alt="" referrerpolicy="no-referrer" onerror="this.remove()"></div><h3>History of the House</h3><a href="#">Explore</a></article>
-      <article class="card"><div class="ph" style="--a:#c9d1d9;--b:#4b5563"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/services/LV_Fashion_Show_WW_HP_Services_Push_2026.jpg" alt="" referrerpolicy="no-referrer" onerror="this.remove()"></div><h3>Fashion Shows</h3><a href="#">Discover</a></article>
-      <article class="card"><div class="ph" style="--a:#e5c7c0;--b:#9a5b52"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/services/LV_Arts_Culture_WW_HP_Services_Push_2026.jpg" alt="" referrerpolicy="no-referrer" onerror="this.remove()"></div><h3>Arts &amp; Culture Program</h3><a href="#">The Program</a></article>
+      <article class="card"><div class="ph" style="--a:#d8c3a5;--b:#8d6e4c"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/services/LV_Heritage_Services_Push_2026.jpg" alt="History of the House" width="800" height="1000" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><h3>History of the House</h3><a href="https://eu.louisvuitton.com/eng-e1/magazine/articles/heritage" aria-label="Explore: History of the House">Explore</a></article>
+      <article class="card"><div class="ph" style="--a:#c9d1d9;--b:#4b5563"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/services/LV_Fashion_Show_WW_HP_Services_Push_2026.jpg" alt="Fashion Shows" width="800" height="1000" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><h3>Fashion Shows</h3><a href="https://eu.louisvuitton.com/eng-e1/magazine/fashion-shows" aria-label="Discover: Fashion Shows">Discover</a></article>
+      <article class="card"><div class="ph" style="--a:#e5c7c0;--b:#9a5b52"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/services/LV_Arts_Culture_WW_HP_Services_Push_2026.jpg" alt="Arts &amp; Culture Program" width="800" height="1000" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()"></div><h3>Arts &amp; Culture Program</h3><a href="https://eu.louisvuitton.com/eng-e1/magazine/articles/arts-culture-program" aria-label="The Program: Arts &amp; Culture Program">The Program</a></article>
     </div>
   </section>
 </main>
 
 <footer>
-  <a class="flogo" href="#top">LOUIS VUITTON</a>
+  <a class="flogo" href="#main">LOUIS VUITTON</a>
   <div class="fcols">
-    <div><h4>Help</h4><a href="#">Contact us</a><a href="#">FAQ</a><a href="#">Track my order</a></div>
-    <div><h4>Services</h4><a href="#">Personal Advisors</a><a href="#">Repairs</a><a href="#">Personalization</a><a href="#">Art of Gifting</a></div>
-    <div><h4>About Louis Vuitton</h4><a href="#">Fashion Shows</a><a href="#">Arts &amp; Culture</a><a href="#">La Maison</a><a href="#">Sustainability</a></div>
-    <div><h4>Email Sign-up</h4><a href="#">Receive the latest news</a><h4 class="mt">Follow Us</h4><div class="social"><a href="#">Instagram</a><a href="#">X</a><a href="#">YouTube</a></div></div>
+    <div><h3>Help</h3><a href="https://eu.louisvuitton.com/eng-e1/sitemap">Contact us</a><a href="https://eu.louisvuitton.com/eng-e1/sitemap">FAQ</a><a href="https://eu.louisvuitton.com/eng-e1/sitemap">Track my order</a></div>
+    <div><h3>Services</h3><a href="https://eu.louisvuitton.com/eng-e1/stories/louis-vuitton-personal-advisors">Personal Advisors</a><a href="https://eu.louisvuitton.com/eng-e1/stories/louis-vuitton-repairs">Repairs</a><a href="https://eu.louisvuitton.com/eng-e1/gifts/personalization/all-personalization/_/N-t1jlwphf">Personalization</a><a href="https://eu.louisvuitton.com/eng-e1/stories/gifting">Art of Gifting</a></div>
+    <div><h3>About Louis Vuitton</h3><a href="https://eu.louisvuitton.com/eng-e1/magazine/fashion-shows">Fashion Shows</a><a href="https://eu.louisvuitton.com/eng-e1/magazine/articles/arts-culture-program">Arts &amp; Culture</a><a href="https://eu.louisvuitton.com/eng-e1/magazine">La Maison</a><a href="https://eu.louisvuitton.com/eng-e1/magazine/articles/heritage">Heritage</a></div>
+    <div><h3>Email Sign-up</h3><a href="https://eu.louisvuitton.com/eng-e1/sitemap">Receive the latest news</a><h3 class="mt">Follow Us</h3><div class="social"><a href="https://www.instagram.com/louisvuitton/" rel="noopener">Instagram</a><a href="https://x.com/LouisVuitton" rel="noopener">X</a><a href="https://www.youtube.com/louisvuitton" rel="noopener">YouTube</a></div></div>
   </div>
   <div class="fbottom">
-    <div class="legal"><a href="#">Sitemap</a><a href="#">Legal &amp; privacy</a><a href="#">Cookies</a></div>
-    <a href="#">International (English)</a>
+    <div class="legal"><a href="https://eu.louisvuitton.com/eng-e1/sitemap">Sitemap</a><a href="https://eu.louisvuitton.com/eng-e1/legal-notice">Legal &amp; privacy</a><a href="https://eu.louisvuitton.com/eng-e1/legal-notice">Cookies</a></div>
+    <a href="https://eu.louisvuitton.com/eng-e1/homepage">International (English)</a>
   </div>
   <p class="note">Practice clone for learning flexbox. Not affiliated with Louis Vuitton.</p>
 </footer>
-
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>

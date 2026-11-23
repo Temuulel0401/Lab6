@@ -4,8 +4,14 @@ const hero = document.querySelector(".hero");
 
 // Hero-оос гарахад header цагаан болно
 const setHeader = () => header.classList.toggle("solid", scrollY > hero.offsetHeight - 80);
-addEventListener("scroll", setHeader); setHeader();
+addEventListener("scroll", setHeader, { passive: true });
+setHeader();
 
+// Зураг ачаалахгүй бол (холбоос тасарвал) gradient fallback үлдэнэ
+document.querySelectorAll("img").forEach(img => {
+  img.addEventListener("error", () => img.remove());
+  if (img.loading !== "lazy" && img.complete && img.naturalWidth === 0) img.remove();
+});
 
 const menuBtn = document.getElementById("menuBtn");
 const toggleMenu = open => {

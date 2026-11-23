@@ -137,3 +137,40 @@ body.menu-open #drawer{visibility:visible}
 .fcols>div>a{display:flex}
 #menuList .sub a{min-height:44px;display:flex;align-items:center;padding:0}
 .rail .item{padding-bottom:8px}
+/* ===== Gradient fallback colors (replaces inline style attributes) ===== */
+.rail .item:nth-child(1) .ph{--a:#e8d5b5;--b:#9a6b3c}
+.rail .item:nth-child(2) .ph{--a:#f1c9c0;--b:#a4574b}
+.rail .item:nth-child(3) .ph{--a:#d7dde8;--b:#566581}
+.rail .item:nth-child(4) .ph{--a:#f3e3b3;--b:#b08a2e}
+.rail .item:nth-child(5) .ph{--a:#cdd9cf;--b:#516656}
+.rail .item:nth-child(6) .ph{--a:#d9d2c9;--b:#5d5247}
+.rail .item:nth-child(7) .ph{--a:#c9d3e0;--b:#3d4b63}
+.rail .item:nth-child(8) .ph{--a:#e2cfd9;--b:#7d4a64}
+.banner.g1{--a:#b8860b;--b:#3a2a08}
+.banner.g2{--a:#a9bdd6;--b:#2f3f5c}
+.banner.g3{--a:#c9364b;--b:#4a0a17}
+.banner.g4{--a:#e9d6a8;--b:#8a5a2a}
+.maison-cards .card:nth-child(1) .ph{--a:#d8c3a5;--b:#8d6e4c}
+.maison-cards .card:nth-child(2) .ph{--a:#c9d1d9;--b:#4b5563}
+.maison-cards .card:nth-child(3) .ph{--a:#e5c7c0;--b:#9a5b52}
+
+/* ===== SEO content blocks ===== */
+.hero .intro{max-width:560px;font-size:16px;line-height:1.6}
+.coll-text{max-width:720px;margin:0 auto;text-align:center;line-height:1.6;color:#444}
+.card p{font-size:14px;line-height:1.6;color:#444;max-width:360px}
+.tip{flex:1 1 280px;display:flex;flex-direction:column;gap:12px;padding:28px;border:1px solid #e5e5e5;text-align:left}
+.tip h3{font-family:Georgia,serif;font-weight:400;font-size:22px}
+.tip p{line-height:1.6;color:#444}
+.tip a{align-self:flex-start;margin-top:auto;border-bottom:1px solid #000;font-size:14px;min-height:44px;display:inline-flex;align-items:center}
+.faq{max-width:860px;margin:0 auto}
+.faq details{border-bottom:1px solid #e5e5e5;padding:8px 0}
+.faq summary{cursor:pointer;font-size:18px;min-height:44px;display:flex;align-items:center}
+.faq details p{line-height:1.7;color:#444;padding:6px 0 12px}
+
+/* ===== Inner page (about.html) ===== */
+body.sub footer{padding-top:24px}
+.article{max-width:760px;margin:0 auto;padding:112px 24px 64px;line-height:1.7}
+.article h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(28px,4vw,42px);margin-bottom:20px;line-height:1.25}
+.article h2{font-family:Georgia,serif;font-weight:400;font-size:24px;margin:32px 0 10px}
+.article p{color:#333;margin-bottom:12px}
+.article .discover{display:inline-flex;align-items:center;min-height:44px;margin-top:16px}

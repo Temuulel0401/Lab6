@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Louis Vuitton Holiday Gifts &amp; New Collections | Lab 6</title>
+<meta name="description" content="Discover Louis Vuitton holiday gifts, handbags, Monogram Rouge beauty and Spring-Summer 2027 collections in this HTML, CSS and JS practice site.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Temuulel">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://temuulel0401.github.io/Lab6/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://eu.louisvuitton.com">
+<link rel="preload" as="image" href="https://eu.louisvuitton.com/images/is/poster-video/a3236166-c766-4e13-b597-30681e8f6aca/87jBQzxODTjW2dVV6MqXAitw.jpg" fetchpriority="high">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Louis Vuitton Holiday Gifts – Lab 6">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://temuulel0401.github.io/Lab6/">
+<meta property="og:title" content="Louis Vuitton Holiday Gifts &amp; New Collections | Lab 6">
+<meta property="og:description" content="Discover Louis Vuitton holiday gifts, handbags, Monogram Rouge beauty and Spring-Summer 2027 collections in this HTML, CSS and JS practice site.">
+<meta property="og:image" content="https://eu.louisvuitton.com/images/is/poster-video/a3236166-c766-4e13-b597-30681e8f6aca/87jBQzxODTjW2dVV6MqXAitw.jpg">
+<meta property="og:image:alt" content="Louis Vuitton holiday gifting campaign">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Louis Vuitton Holiday Gifts &amp; New Collections | Lab 6">
+<meta name="twitter:description" content="Discover Louis Vuitton holiday gifts, handbags, Monogram Rouge beauty and Spring-Summer 2027 collections in this HTML, CSS and JS practice site.">
+<meta name="twitter:image" content="https://eu.louisvuitton.com/images/is/poster-video/a3236166-c766-4e13-b597-30681e8f6aca/87jBQzxODTjW2dVV6MqXAitw.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://temuulel0401.github.io/Lab6/#website", "url": "https://temuulel0401.github.io/Lab6/", "name": "Louis Vuitton Holiday Gifts – Lab 6", "inLanguage": "en"}, {"@type": "WebPage", "@id": "https://temuulel0401.github.io/Lab6/#webpage", "url": "https://temuulel0401.github.io/Lab6/", "name": "Louis Vuitton Holiday Gifts & New Collections | Lab 6", "description": "Discover Louis Vuitton holiday gifts, handbags, Monogram Rouge beauty and Spring-Summer 2027 collections in this HTML, CSS and JS practice site.", "inLanguage": "en", "isPartOf": {"@id": "https://temuulel0401.github.io/Lab6/#website"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://eu.louisvuitton.com/images/is/poster-video/a3236166-c766-4e13-b597-30681e8f6aca/87jBQzxODTjW2dVV6MqXAitw.jpg"}}, {"@type": "FAQPage", "@id": "https://temuulel0401.github.io/Lab6/#faq", "mainEntity": [{"@type": "Question", "name": "What is the Louis Vuitton Holiday Journey?", "acceptedAnswer": {"@type": "Answer", "text": "The Holiday Journey is the Maison’s seasonal gifting campaign. This practice page presents it with a full-screen hero image, a scrollable selection of creations and direct links to the official holiday gift selections."}}, {"@type": "Question", "name": "Which holiday gifts are featured on this page?", "acceptedAnswer": {"@type": "Answer", "text": "The page highlights handbags, wallets and small leather goods, accessories, perfumes, travel pieces and shoes for women and men, together with the Monogram Rouge beauty range and the Vivienne Winter Holiday collection."}}, {"@type": "Question", "name": "Is this the official Louis Vuitton website?", "acceptedAnswer": {"@type": "Answer", "text": "No. This is a Lab 6 practice project that recreates a homepage layout with HTML, CSS and JavaScript. Every product, image and trademark belongs to Louis Vuitton, and all shopping links lead to the official website."}}, {"@type": "Question", "name": "How was this page built?", "acceptedAnswer": {"@type": "Answer", "text": "The layout uses semantic HTML5 landmarks, CSS flexbox with responsive breakpoints and a small JavaScript file that handles the sticky header, the accordion menu and the horizontal carousel of creations."}}]}]}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<header id="header">
+  <div class="h-left">
+    <button type="button" id="menuBtn" class="hbtn" aria-label="Open menu" aria-controls="drawer" aria-expanded="false"><span class="burger" aria-hidden="true"></span><span class="lbl">Menu</span></button>
+    <button type="button" class="hbtn" aria-label="Search"><span aria-hidden="true">⌕</span><span class="lbl">Search</span></button>
+  </div>
+  <a class="logo" href="./" aria-label="Louis Vuitton Holiday Gifts, home">LOUIS VUITTON</a>
+  <div class="h-right">
+    <button type="button" class="hbtn" aria-label="Wishlist"><span aria-hidden="true">♡</span><span class="lbl">Wishlist</span></button>
+    <button type="button" class="hbtn" aria-label="My LV account"><span aria-hidden="true">☺</span><span class="lbl">My LV</span></button>
+  </div>
+</header>
+
+<div id="overlay"></div>
+<nav id="drawer" aria-label="Main menu">
+  <button type="button" id="closeBtn" class="hbtn" aria-label="Close menu">✕ Close</button>
+  <ul id="menuList">
+<li><button type="button" aria-expanded="false">Women<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/women/new-in-women/_/N-ty7er6l">New In for Women</a><a href="https://eu.louisvuitton.com/eng-e1/women/handbags/all-handbags/_/N-tfr7qdp">Women’s Handbags</a><a href="https://eu.louisvuitton.com/eng-e1/women/wallets-and-small-leather-goods/all-wallets-and-small-leather-goods/_/N-t164iz3b">Women’s Small Leather Goods</a><a href="https://eu.louisvuitton.com/eng-e1/women/accessories/all-accessories/_/N-t1i01v9x">Women’s Accessories</a><a href="https://eu.louisvuitton.com/eng-e1/women/vivienne-winter-holiday/_/N-tev5ewj">Vivienne Winter Holiday</a></div></li>
+<li><button type="button" aria-expanded="false">Men<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/men/new-in-men/_/N-t14l5lul">New In for Men</a><a href="https://eu.louisvuitton.com/eng-e1/men/shoes/all-shoes/_/N-t118ht95">Men’s Shoes</a><a href="https://eu.louisvuitton.com/eng-e1/men/wallets-and-small-leather-goods/all-wallets-and-small-leather-goods/_/N-t1iazbp7">Men’s Small Leather Goods</a><a href="https://eu.louisvuitton.com/eng-e1/men/accessories/all-accessories/_/N-t1an9prf">Men’s Accessories</a><a href="https://eu.louisvuitton.com/eng-e1/men/spring-summer-2027-pre-collection/_/N-tfodg11">Spring-Summer 2027 Pre-Collection</a></div></li>
+<li><button type="button" aria-expanded="false">Holiday Gifts<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/stories/all-gifts">All Holiday Gift Selections</a><a href="https://eu.louisvuitton.com/eng-e1/gifts/mon-monogram/_/N-t1vghc33">Mon Monogram Gifts</a></div></li>
+<li><button type="button" aria-expanded="false">Monogram Anniversary<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/monogram-anniversary/the-collections/_/N-tuc26rb">The Monogram Anniversary Collections</a></div></li>
+<li><button type="button" aria-expanded="false">Trunks and Travel<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/trunks-and-travel/travel-bags/all-travel-bags/_/N-tluth1a">Travel Bags and Luggage</a></div></li>
+<li><button type="button" aria-expanded="false">Perfumes and Beauty<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/perfumes-and-beauty/all-perfumes/_/N-t1hojbvl">All Perfumes</a><a href="https://eu.louisvuitton.com/eng-e1/perfumes-and-beauty/perfumes-gifts/_/N-t40392g">Perfume Gifts</a><a href="https://eu.louisvuitton.com/eng-e1/perfumes-and-beauty/all-beauty/_/N-t21cl44">All Beauty</a></div></li>
+<li><button type="button" aria-expanded="false">Jewelry<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/jewelry/categories/all-fine-jewelry/_/N-t1svd8ld">Fine Jewelry</a></div></li>
+<li><button type="button" aria-expanded="false">Watches<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/watches/all-watches/_/N-t1d9ikj8">All Louis Vuitton Watches</a></div></li>
+<li><button type="button" aria-expanded="false">Home, Lifestyle and Library<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/home-lifestyle-and-library/furniture-and-lighting/all-furniture-and-lighting/_/N-t1p0t69l">Furniture and Lighting</a></div></li>
+<li><button type="button" aria-expanded="false">Services<i aria-hidden="true">›</i></button><div class="sub"><a href="https://eu.louisvuitton.com/eng-e1/stories/louis-vuitton-services">Louis Vuitton Services</a></div></li>
+<li><a class="toplink" href="https://eu.louisvuitton.com/eng-e1/magazine">The Maison Louis Vuitton</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <img class="bg" src="https://eu.louisvuitton.com/images/is/poster-video/a3236166-c766-4e13-b597-30681e8f6aca/87jBQzxODTjW2dVV6MqXAitw.jpg" alt="Louis Vuitton holiday gifting campaign with festive gift selections" width="1600" height="900" fetchpriority="high">
+    <p class="eyebrow">Gifting</p>
+    <h1 id="hero-title">A Holiday Journey with Louis Vuitton</h1>
+    <p class="intro">Find Louis Vuitton holiday gifts for every traveler: iconic handbags, small leather goods, perfumes and accessories chosen for the season.</p>
+    <a class="pill" href="https://eu.louisvuitton.com/eng-e1/stories/all-gifts">Discover the Holiday Gift Selections</a>
+  </section>
+
+  <section class="block" id="explore" aria-labelledby="explore-title">
+    <h2 class="title" id="explore-title">Explore a Selection of the Maison’s Creations</h2>
+    <p class="eyebrow dark">Holiday</p>
+    <p class="lead">Scroll through the holiday selection to compare gifts for women and men. Every tile opens the matching category on the official Louis Vuitton website.</p>
+    <div class="rail-wrap">
+      <button type="button" class="arrow left" id="prev" aria-label="Previous creations">‹</button>
+      <div class="rail" id="rail">
+<a class="item" href="https://eu.louisvuitton.com/eng-e1/women/handbags/all-handbags/_/N-tfr7qdp"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/categories/holiday/HOLIDAY_26_WLG_PET3_DII.jpg" alt="Women’s handbags selected for the Louis Vuitton holiday season" width="600" height="800" loading="lazy"></div><span>Women’s Handbags</span></a>
+<a class="item" href="https://eu.louisvuitton.com/eng-e1/women/wallets-and-small-leather-goods/all-wallets-and-small-leather-goods/_/N-t164iz3b"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/categories/holiday/HOLIDAY_26_SLG2_DII.jpg" alt="Women’s wallets and small leather goods gift selection" width="600" height="800" loading="lazy"></div><span>Women’s Wallets and Small Leather Goods</span></a>
+<a class="item" href="https://eu.louisvuitton.com/eng-e1/women/accessories/all-accessories/_/N-t1i01v9x"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/categories/holiday/HOLIDAY_26_WACC_FJ_DII.jpg" alt="Women’s accessories gift selection from Louis Vuitton" width="600" height="800" loading="lazy"></div><span>Women’s Accessories</span></a>
+<a class="item" href="https://eu.louisvuitton.com/eng-e1/perfumes-and-beauty/perfumes-gifts/_/N-t40392g"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/categories/holiday/HOLIDAY_26_PERFUMES2_DII.jpg" alt="Louis Vuitton perfumes presented as holiday gifts" width="600" height="800" loading="lazy"></div><span>Perfumes</span></a>
+<a class="item" href="https://eu.louisvuitton.com/eng-e1/gifts/mon-monogram/_/N-t1vghc33"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/categories/holiday/HOLIDAY_26_TRAVEL2_DII.jpg" alt="Louis Vuitton travel gifts with the Mon Monogram personalization" width="600" height="800" loading="lazy"></div><span>Travel</span></a>
+<a class="item" href="https://eu.louisvuitton.com/eng-e1/men/shoes/all-shoes/_/N-t118ht95"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/categories/holiday/HOLIDAY_26_MSHOES_DII.jpg" alt="Men’s shoes from the Louis Vuitton holiday selection" width="600" height="800" loading="lazy"></div><span>Men’s Shoes</span></a>
+<a class="item" href="https://eu.louisvuitton.com/eng-e1/men/wallets-and-small-leather-goods/all-wallets-and-small-leather-goods/_/N-t1iazbp7"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/categories/holiday/HOLIDAY_26_MSLG_DII.jpg" alt="Men’s wallets and small leather goods gift selection" width="600" height="800" loading="lazy"></div><span>Men’s Wallets and Small Leather Goods</span></a>
+<a class="item" href="https://eu.louisvuitton.com/eng-e1/men/accessories/all-accessories/_/N-t1an9prf"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/categories/holiday/HOLIDAY_26_MACC2_DII.jpg" alt="Men’s accessories gift selection from Louis Vuitton" width="600" height="800" loading="lazy"></div><span>Men’s Accessories</span></a>
+      </div>
+      <button type="button" class="arrow right" id="next" aria-label="Next creations">›</button>
+    </div>
+  </section>
+
+  <section class="collection"><div class="banner ph plain g1"><img src="https://eu.louisvuitton.com/images/is/poster-video/a2fc7450-c41a-4f2b-8a41-5fa02d547c04/eLuxgxlHKIkPUy2PFK79AAAC.jpg" alt="Louis Vuitton seasonal campaign banner with the latest creations of the Maison" width="1600" height="700" loading="lazy"></div></section>
+
+  <section class="block" id="gift-guide" aria-labelledby="guide-title">
+    <h2 class="title" id="guide-title">Louis Vuitton Holiday Gift Guide</h2>
+    <p class="lead">Not sure where to begin? These three ideas show how to choose a Louis Vuitton gift by recipient, occasion and budget.</p>
+    <div class="cards">
+      <article class="tip">
+        <h3>Holiday Gifts for Her</h3>
+        <p>A Louis Vuitton handbag is the classic centerpiece of a holiday present. The Pochette Hills and the Speedy show how Monogram canvas combines recognizable style with everyday practicality. For a smaller budget, a coin purse such as the Rosalie or a wallet still carries the signature craftsmanship.</p>
+        <a href="https://eu.louisvuitton.com/eng-e1/women/handbags/all-handbags/_/N-tfr7qdp">Shop all Louis Vuitton women’s handbags</a>
+      </article>
+      <article class="tip">
+        <h3>Holiday Gifts for Him</h3>
+        <p>Men’s gifting often starts with sneakers, sunglasses and small leather goods. The LV Trainer Sneaker and the LV Lock sunglasses belong to the Spring-Summer 2027 Pre-Collection, which also includes the Monogram Surplus Denim Tracktop for a relaxed, modern wardrobe.</p>
+        <a href="#spring-summer-2027">See the men’s Spring-Summer 2027 pieces</a>
+      </article>
+      <article class="tip">
+        <h3>Beauty and Personal Touches</h3>
+        <p>Monogram Rouge brings lipsticks, a lip balm and an eyeshadow palette in one deep red shade, ready to give. Pair a beauty gift with a personalized travel piece to make the present feel truly one of a kind for a friend or partner.</p>
+        <a href="#monogram-rouge">Jump to the Monogram Rouge beauty gifts</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="collection" id="spring-summer-2027" aria-labelledby="col1">
+    <div class="banner ph g2"><img src="https://eu.louisvuitton.com/images/is/poster-video/a316cd5d-102a-4e55-8521-1d3f9b74c6ff/5GnbrY7TAuF0hzcfs2Bch9c6.jpg" alt="Spring-Summer 2027 Pre-Collection – Louis Vuitton Men" width="1600" height="800" loading="lazy"><p class="eyebrow">Men</p><h2 id="col1">Spring-Summer 2027 Pre-Collection</h2></div>
+    <p class="coll-text">The men’s Spring-Summer 2027 Pre-Collection pairs relaxed denim with sharp accessories and the new Speedy 18 Bandoulière, a compact bag that suits both city days and weekend trips.</p>
+    <div class="products"><a class="product" href="https://eu.louisvuitton.com/eng-e1/products/speedy-18-bandouliere-g77-P00143374/M3A518"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-speedy-18-bandouliere--M3A518_PM2_Front%20view.jpg" alt="Speedy 18 Bandoulière handbag in Monogram canvas" width="600" height="600" loading="lazy"></div><span>Speedy 18 Bandoulière</span></a><a class="product" href="https://eu.louisvuitton.com/eng-e1/products/monogram-surplus-denim-tracktop-HWA22WD1O/1AL0MR"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-surplus-denim-tracktop--HWA22WD1O650_PM2_Front%20view.jpg" alt="Monogram Surplus Denim Tracktop jacket" width="600" height="600" loading="lazy"></div><span>Monogram Surplus Denim Tracktop</span></a><a class="product" href="https://eu.louisvuitton.com/eng-e1/products/lv-trainer-sneaker-nvprod7980055v/1AL3OO"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-trainer-sneaker--B1UQ84DN20_PM2_Front%20view.jpg" alt="LV Trainer Sneaker for men" width="600" height="600" loading="lazy"></div><span>LV Trainer Sneaker</span></a><a class="product" href="https://eu.louisvuitton.com/eng-e1/products/lv-lock-round-square-sunglasses-s00-nvprod7990012v/Z3664W"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-lock-round-square-sunglasses--Z3664W_PM2_Front%20view.jpg" alt="LV Lock Round Square Sunglasses" width="600" height="600" loading="lazy"></div><span>LV Lock Round Square Sunglasses</span></a></div>
+    <a class="discover" href="https://eu.louisvuitton.com/eng-e1/men/spring-summer-2027-pre-collection/_/N-tfodg11">Discover the Spring-Summer 2027 Pre-Collection</a>
+  </section>
+
+  <section class="collection" id="monogram-rouge" aria-labelledby="col2">
+    <div class="banner ph g3"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/collections/monogram-rouge/MONOGRAM_ROUGE_HP_Push_Nov26_DII.jpg" alt="Monogram Rouge – Louis Vuitton Beauty" width="1600" height="800" loading="lazy"><p class="eyebrow">Beauty</p><h2 id="col2">Monogram Rouge</h2></div>
+    <p class="coll-text">Monogram Rouge celebrates Louis Vuitton Beauty with matte and satin lipsticks, a nourishing lip balm and an eyeshadow palette that share the same shade for a complete, giftable look.</p>
+    <div class="products"><a class="product" href="https://eu.louisvuitton.com/eng-e1/products/lv-rouge-matte-lipstick-nvprod8420005v/LLD012"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-rouge---matte-lipstick---896--LLD012_PM2_Front%20view.jpg" alt="LV Rouge matte lipstick in shade 896" width="600" height="600" loading="lazy"></div><span>LV Rouge – Matte Lipstick – 896</span></a><a class="product" href="https://eu.louisvuitton.com/eng-e1/products/lv-rouge-satin-lipstick-nvprod8420006v/LLD013"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-rouge---satin-lipstick---896--LLD013_PM2_Front%20view.jpg" alt="LV Rouge satin lipstick in shade 896" width="600" height="600" loading="lazy"></div><span>LV Rouge – Satin Lipstick – 896</span></a><a class="product" href="https://eu.louisvuitton.com/eng-e1/products/lv-baume-lip-balm-P00140183/LLD014"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-baume---lip-balm---051--LLD014_PM2_Front%20view.jpg" alt="LV Baume lip balm in shade 051" width="600" height="600" loading="lazy"></div><span>LV Baume – Lip Balm – 051</span></a><a class="product" href="https://eu.louisvuitton.com/eng-e1/products/lv-ombres-eyeshadow-palette-896-P00149297/LYD005"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-ombres---eyeshadow-palette---896--LYD005_PM2_Front%20view.jpg" alt="LV Ombres eyeshadow palette in shade 896" width="600" height="600" loading="lazy"></div><span>LV Ombres – Eyeshadow Palette – 896</span></a></div>
+    <a class="discover" href="https://eu.louisvuitton.com/eng-e1/perfumes-and-beauty/all-beauty/_/N-t21cl44">Discover the Monogram Rouge Collection</a>
+  </section>
+
+  <section class="collection" id="vivienne-winter-holiday" aria-labelledby="col3">
+    <div class="banner ph g4"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/collections/vivienne-holiday/Vivienne_Holiday_Nov26_WW_HP_Push_DII.jpg" alt="Vivienne Winter Holiday – Louis Vuitton Women" width="1600" height="800" loading="lazy"><p class="eyebrow">Women</p><h2 id="col3">Vivienne Winter Holiday</h2></div>
+    <p class="coll-text">Vivienne, the playful Louis Vuitton mascot, joins the winter holiday collection with bags, sneakers and accessories made to be gifted and carried all season long.</p>
+    <div class="products"><a class="product" href="https://eu.louisvuitton.com/eng-e1/products/pochette-hills-autres-toiles-monogram-P00142220/M2A783"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-pochette-hills---M2A783_PM2_Front%20view.jpg" alt="Pochette Hills bag in Monogram canvas" width="600" height="600" loading="lazy"></div><span>Pochette Hills</span></a><a class="product" href="https://eu.louisvuitton.com/eng-e1/products/time-out-sneaker-nvprod8030048v/1AKZ8T"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-time-out-sneaker--A1UT5FSL33_PM2_Front%20view.jpg" alt="Time Out Sneaker for women" width="600" height="600" loading="lazy"></div><span>Time Out Sneaker</span></a><a class="product" href="https://eu.louisvuitton.com/eng-e1/products/rosalie-coin-purse-autres-toiles-monogram-P00141804/M2A794"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-rosalie-coin-purse--M2A794_PM2_Front%20view.jpg" alt="Rosalie Coin Purse small leather good" width="600" height="600" loading="lazy"></div><span>Rosalie Coin Purse</span></a><a class="product" href="https://eu.louisvuitton.com/eng-e1/products/vivienne-sweet-bb-bandeau-s00-P00140473/M9A258"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-vivienne-sweet-bb-bandeau--M9A258_PM2_Front%20view.jpg" alt="Vivienne Sweet BB Bandeau accessory" width="600" height="600" loading="lazy"></div><span>Vivienne Sweet BB Bandeau</span></a></div>
+    <a class="discover" href="https://eu.louisvuitton.com/eng-e1/women/vivienne-winter-holiday/_/N-tev5ewj">Discover the Vivienne Winter Holiday Collection</a>
+  </section>
+
+  <section class="block maison" id="maison" aria-labelledby="maison-title">
+    <h2 class="title" id="maison-title">The Maison Louis Vuitton</h2>
+    <p class="lead">Discover Louis Vuitton’s history from 1854 to the present day — an enduring spirit of travel, visionary artistic directors, and exceptional savoir-faire.</p>
+    <div class="cards maison-cards">
+<article class="card"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/services/LV_Heritage_Services_Push_2026.jpg" alt="Louis Vuitton history in a heritage image from the Maison" width="800" height="1000" loading="lazy"></div><h3>History of the House</h3><p>Follow the story that began in 1854 with a trunk-maker in Paris and grew into a global house of travel, leather goods and fashion.</p><a href="https://eu.louisvuitton.com/eng-e1/magazine/articles/heritage">Explore the History of the House</a></article>
+<article class="card"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/services/LV_Fashion_Show_WW_HP_Services_Push_2026.jpg" alt="Louis Vuitton fashion show presentation" width="800" height="1000" loading="lazy"></div><h3>Fashion Shows</h3><p>See how the artistic directors of the Maison present each new season on the runway, from ready-to-wear to accessories.</p><a href="https://eu.louisvuitton.com/eng-e1/magazine/fashion-shows">Watch the Louis Vuitton Fashion Shows</a></article>
+<article class="card"><div class="ph"><img src="https://eu.louisvuitton.com/images/is/image//content/dam/lv/editorial-content/New-Homepage/2026/central/services/LV_Arts_Culture_WW_HP_Services_Push_2026.jpg" alt="Louis Vuitton Arts and Culture program visual" width="800" height="1000" loading="lazy"></div><h3>Arts &amp; Culture Program</h3><p>Learn how the Maison supports contemporary art, exhibitions and creative collaborations around the world.</p><a href="https://eu.louisvuitton.com/eng-e1/magazine/articles/arts-culture-program">Discover the Arts &amp; Culture Program</a></article>
+    </div>
+  </section>
+
+  <section class="block" id="faq" aria-labelledby="faq-title">
+    <h2 class="title" id="faq-title">Frequently Asked Questions</h2>
+    <div class="faq">
+<details><summary>What is the Louis Vuitton Holiday Journey?</summary><p>The Holiday Journey is the Maison’s seasonal gifting campaign. This practice page presents it with a full-screen hero image, a scrollable selection of creations and direct links to the official holiday gift selections.</p></details>
+<details><summary>Which holiday gifts are featured on this page?</summary><p>The page highlights handbags, wallets and small leather goods, accessories, perfumes, travel pieces and shoes for women and men, together with the Monogram Rouge beauty range and the Vivienne Winter Holiday collection.</p></details>
+<details><summary>Is this the official Louis Vuitton website?</summary><p>No. This is a Lab 6 practice project that recreates a homepage layout with HTML, CSS and JavaScript. Every product, image and trademark belongs to Louis Vuitton, and all shopping links lead to the official website.</p></details>
+<details><summary>How was this page built?</summary><p>The layout uses semantic HTML5 landmarks, CSS flexbox with responsive breakpoints and a small JavaScript file that handles the sticky header, the accordion menu and the horizontal carousel of creations.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <a class="flogo" href="./">LOUIS VUITTON</a>
+  <div class="fcols">
+    <div><h3>On This Page</h3><a href="#explore">Holiday creations</a><a href="#gift-guide">Holiday gift guide</a><a href="#maison">The Maison</a><a href="#faq">Questions and answers</a></div>
+    <div><h3>Services</h3><a href="https://eu.louisvuitton.com/eng-e1/stories/louis-vuitton-personal-advisors">Personal Advisors</a><a href="https://eu.louisvuitton.com/eng-e1/stories/louis-vuitton-repairs">Repairs</a><a href="https://eu.louisvuitton.com/eng-e1/gifts/personalization/all-personalization/_/N-t1jlwphf">Personalization</a><a href="https://eu.louisvuitton.com/eng-e1/stories/gifting">Art of Gifting</a></div>
+    <div><h3>About</h3><a href="about.html">About this practice project</a><a href="https://eu.louisvuitton.com/eng-e1/magazine">La Maison Louis Vuitton</a><a href="https://eu.louisvuitton.com/eng-e1/sitemap">Louis Vuitton sitemap</a></div>
+    <div><h3>Follow Us</h3><div class="social"><a href="https://www.instagram.com/louisvuitton/" rel="noopener noreferrer">Instagram</a><a href="https://x.com/LouisVuitton" rel="noopener noreferrer">X</a><a href="https://www.youtube.com/louisvuitton" rel="noopener noreferrer">YouTube</a></div></div>
+  </div>
+  <div class="fbottom">
+    <div class="legal"><a href="https://eu.louisvuitton.com/eng-e1/legal-notice">Legal &amp; privacy</a></div>
+    <a href="https://eu.louisvuitton.com/eng-e1/homepage">International (English)</a>
+  </div>
+  <p class="note">Lab 6 practice project for learning HTML, CSS and JavaScript. Not affiliated with Louis Vuitton; all trademarks and images belong to their owners.</p>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>

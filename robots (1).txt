@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://temuulel0401.github.io/Lab6/sitemap.xml

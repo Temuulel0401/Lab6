@@ -1,6 +1,3 @@
-/* Контент нь index.html дотор static байдлаар бичигдсэн (SEO-д зориулсан).
-   Энд зөвхөн интерактив хэсэг байна. */
-
 /* ---------- ИНТЕРАКТИВ ---------- */
 const header = document.getElementById("header");
 const hero = document.querySelector(".hero");
@@ -9,7 +6,7 @@ const hero = document.querySelector(".hero");
 const setHeader = () => header.classList.toggle("solid", scrollY > hero.offsetHeight - 80);
 addEventListener("scroll", setHeader); setHeader();
 
-// Drawer нээх / хаах
+
 const menuBtn = document.getElementById("menuBtn");
 const toggleMenu = open => {
   document.body.classList.toggle("menu-open", open);
